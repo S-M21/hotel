@@ -1,0 +1,481 @@
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDES1060 Project 2</title>
+   <link rel="stylesheet" href="https://use.typekit.net/vom8qui.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://kit.fontawesome.com/11748f4322.js" crossorigin="anonymous"></script>
+
+
+  </head>
+
+  <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- place your code starting here -->
+
+<!-- start of code from codepen-->
+
+<header>
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell">
+        <a class="logo" href="#">  <img id="logo" src="img/logo3.png">
+</a>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell medium-3 show-for-medium">
+        <a href="#services">Amenities</a>
+      </div>
+      <div class="cell medium-3 show-for-medium">
+        <a href="#cafe">Cafe</a>
+      </div>
+      <div class="cell medium-3 show-for-medium">
+        <a href="#around">Around Boston</a>
+      </div>
+      <div class="cell medium-3 show-for-medium">
+        <a href="#booking">Book a Room</a>
+      </div>
+      <div class="cell show-for-small-only">
+        <a class="menu-link" href="#" data-open="exampleModal1">Menu</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="reveal" id="exampleModal1" data-reveal>
+  <div class="grid-x align-middle">
+    <div class="cell">
+      <ul class="vertical menu align-center">
+        <li> <a href="#services">Amenities</a></li>
+        <li><a href="#cafe">Cafe</a></li>
+        <li><a href="#around">Around Boston</a></li>
+        <li><a href="#booking">Book a Room</a></li>
+      </ul>
+    </div>
+  </div>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- end of code from codepen-->
+
+
+<section id="hero" class="hero">
+
+<h1> In the Heart of Boston</h1>
+
+</section>
+
+
+
+
+<section class="divider">
+  
+<div class="grid-container">
+        <h1>Welcome Home
+</h1>
+
+  <div class="grid-x grid-margin-x">
+  
+  <div class="cell medium-4 text-center">
+<img class="preview" src="img/cafe1.jpg" > 
+    <h2>Cafe</h2>
+
+<h4 class="captain">Eat in or Take out from our Cafe</h4>
+</div>
+<div class="cell medium-4 text-center">
+<img class="preview" src="img/Lounge1.jpg"> 
+      <h2>Lounge</h2>
+
+<h4 class="captain">Hang out in our lounge</h4>
+</div>
+<div class="cell medium-4 text-center">
+ <img class="preview" src="img/suite1.jpg"> 
+       <h2>Suites</h2>
+<h4 class="captain">Feel like your home away from home</h4>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="services" class="features">
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+<h2>Amenities</h2>
+</div>
+</div>
+
+  <div class="grid-x grid-margin-x">
+  
+  <div class="cell medium-6">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title"><h3>Hotel Amenities</h3></a>
+
+    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <div class="accordion-content" data-tab-content>
+    <ul>
+  <li><p>A Cafe</p></li>
+  <li><p>Free Wifi</p></li>
+  <li><p>Complimentary Breakfast</p></li>
+  <li><p>A Quiet Study Area</p></li>
+  <li><p>Free Printing</p></li>
+  <li><p>A Lounge</p></li>
+  </ul>
+    </div>
+  </li>
+  <!-- ... -->
+</ul>
+</div>
+  
+  <div class="cell medium-6">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title"><h3>Room Amenities</h3></a>
+
+    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <div class="accordion-content" data-tab-content>
+    <ul>
+   <li><p>Bathroom Toiletries</p></li>
+  <li><p>AC/Heating</p></li>
+  <li><p>Mini Fridge (select rooms have a kitchen)</p></li>
+  <li><p>Towels</p></li>
+  <li><p>Coffee Maker</p></li>
+  <li><p>Tv</p></li>
+  </ul>
+    </div>
+  </li>
+  <!-- ... -->
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="booking" class="booking">
+    <!--
+
+    - datepicker widget (be careful when editing)
+    - displays two fields in two columns
+    - place this inside one of your page sections
+
+    -->
+    <div class="grid-container"> 
+      <div class="grid-x">
+        <div class="cell">
+    <h1>Book a Room</h1>
+</div>
+</div> 
+<div class="grid-x">
+  <div class="cell">
+
+    <table class="table">
+      <thead>
+        <tr class="grid-x">
+          <th class="cell small-6">Check in:
+            <input type="text" class="span2" value="" id="dpd1">
+          </th>
+          <th class="cell small-6">Check out:
+            <input type="text" class="span2" value="" id="dpd2">
+          </th>
+        </tr>
+        <tr class="grid-x">
+          <th class="cell">
+            <input type="submit" class="submit button radius small" value="Check Availability" data-open="confirmation-overlay">
+          </th>
+        </tr>        
+      </thead>
+    </table>
+</div>
+</div>
+</div>
+    <!--
+
+    - overlay window with spans used to show data from datepicker
+    - edit the grid however you would like to fit your layout, but
+    - do not delete the <span class="dpd1"></span> and <span class="dpd2"></span> tags, these are used to show the user the dates they selected
+    - this section can go anywhere in your code, but to keep things organized, place it after the section where you have your date picker form
+
+    -->
+
+    <div id="confirmation-overlay" class="reveal" data-reveal>
+      <div class="grid-x">
+        <div class="cell  text-center">
+          <div class="overlay ">
+            <h1>Success</h1>
+            <h2>You've booked a room from <span class="dpd1"></span> to <span class="dpd2"></span>.</h2>
+          </div>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+    </div>
+
+<!-- code that is after booking --> 
+
+</section>
+
+
+
+
+
+<section id="cafe" class="Cafe">
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+
+<h2>Cafe</h2>
+<h4>We are here when you need a snack no matter the hour</h4>
+<p class="times">Open  <time>7:00am</time> to <time>11:00pm</time> Monday to Thursday</p>
+<p class="times">Open  <time>6:00am</time> to <time>12:00am</time> Friday to Sunday</p>
+</div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+  
+  <div class="cell medium-6">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title"><img src="img/menu1.png" alt="salad">
+<h3>Salads</h3></a>
+
+    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <div class="accordion-content" data-tab-content>
+    <ul>
+<h3 class="item">Caprese Avocado Salad</h3>
+ <p class="food">Mozzarella ,tomatoes, basil, avocado tossed in a balsamic dressing</p>
+ <h3 class="item">Spinach and Apples Salad</h3>
+  <p class="food">Apples, Spinach, and mustard dressing on the side</p>
+<h3 class="item">Chopped Salad</h3>
+  <p class="food">Lettuce, Shallot, Cucumber, Cherry Tomatoes, with Italian dressing 
+on the side</p>
+  </ul>
+    </div>
+  </li>
+  <!-- ... -->
+</ul>
+</div>
+  
+  <div class="cell medium-6">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title"><img src="img/smoothie.png" alt="smoothie">
+<h3>Smoothies</h3></a>
+
+    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <div class="accordion-content" data-tab-content>
+    <ul>
+   <h3 class="item">Raspberry Orange</h3>
+  <p class="food">Rasberries, Orange Juice, Banana, Honey, and Ice</p>
+<h3 class="item">Banana Strawberry </h3>
+  <p class="food">Banana, Strawberries, Pineapple Juice, and Ice</p>
+<h3 class="item">Blueberry Cinnamon</h3>
+  <p class="food">Blueberries, Apple Juice, Rolled Oats, Cinnamon, Almond Milk, and Honey</p>
+  </ul>
+    </div>
+  </li>
+  <!-- ... -->
+</ul>
+</div>
+</div>
+</div>
+  
+    <!-- second set -->
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+  
+  <div class="cell medium-6">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title"><img src="img/bread.png" alt="bread">
+<h3>Bakery</h3></a>
+
+    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <div class="accordion-content" data-tab-content>
+    <ul>
+<h3>Bagel Types</h3>
+<p class="addon">each bagel comes with choice of butter or cream cheese</p>
+      <p class="food">Plain, Whole Wheat,Pumpernickel, Cinnamon Raisin</p>
+    <h3>Cookie Types</h3>
+      <p class="food">Oatmeal Raisin,Chocolate Chip, Snickerdoodle,Sugar</p>
+   <h3>Muffin Types</h3>
+      <p class="food">Blueberry, Apple Zucchini, Banana, Chocolate Chip</p>
+  </ul>
+    </div>
+  </li>
+  <!-- ... -->
+</ul>
+</div>
+  
+  <div class="cell medium-6">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title">
+<img src="img/Sandwich.png" alt="Sandwich">
+<h3>Sandwiches</h3></a>
+
+    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <div class="accordion-content" data-tab-content>
+    <ul>
+   <h3 class="item">Turkey Sandwich </h3>
+  <p class="food">Deli Turkey, with Cheddar Cheese, Tomato, Apple, and Lettuce on sourdough roll</p>
+<h3 class="item">Caprese Sandwich</h3>
+  <p class="food">Mozzarella, Tomato, Sweet Basil drizzled in olive oil on a roll</p>
+<h3 class="item">Roast Beef Sandwich</h3>
+  <p class="food">Roast Beef, Provolone, Tomato, lettuce on a French Roll</p>
+  </ul>
+    </div>
+  </li>
+  <!-- ... -->
+</ul>
+</div>
+</div>
+</div>
+  
+  
+</section>
+
+
+
+
+<section id="around"class="around">
+  
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell">
+<h1>Around Boston</h1>
+
+</div>
+</div>
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/slide5.png" alt="fenway park">
+          <figcaption class="orbit-caption">
+            <h3>Visit Fenway Park</h3>
+            <h4>Check out the home of the Boston Red Sox</h4>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/slide3.png" alt="zoo">
+          <figcaption class="orbit-caption">
+            <h3>Visit the Zoo!</h3>
+            <h4>Check out all the animals that the Franklin Park Zoo has</h4>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/slide2.png" alt="Boat">
+          <figcaption class="orbit-caption">
+            <h3>Take a Ride on a Duck Boat</h3>
+            <h4>Check out Boston's Famous duck boats</h4>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/slide4.png" alt="Theater">
+          <figcaption class="orbit-caption">
+            <h3>Get Tickets to See a Show</h3>
+            <h4>Check out various theaters and shows</h4>
+          </figcaption>
+        </figure>
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="img/slide1.png" alt="Park">
+          <figcaption class="orbit-caption">
+            <h3>Visit a Park</h3>
+            <h4>Check out one of Boaton's many parks</h4>
+          </figcaption>
+        </figure>
+
+      </li>
+    </ul>
+  </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0">
+      <span class="show-for-sr">First slide details.</span>
+      <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+    </button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fifth slide details.</span></button>
+
+  </nav>
+</div>
+</section>
+
+
+<footer>
+  <div class="grid-container">
+    <div class="grid-x">
+       <div class="cell text-center">
+          <a class="logo" href="#">  <img id="logo" src="img/logo3.png"></a>
+       </div>
+       <div class="cell">
+          <address> 278 Richmond st, Boston MA 02109 </address>
+          <h4 class="foot">Contact Us</h4>
+          <p>Phone: (234)-489-299 Email: Richmondhotel-cafe@gmail.com</p>
+       </div>
+ <div class="cell text-center" >
+      <ul class="menu align-center">
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fas fa-phone-alt"></i></a></li>
+      </ul>
+    </div>
+       <div class="cell">
+          <p>© Richmond Hotel & Cafe 2021. All rights reserved.</p>
+        </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <!--
+
+    - do not delete anything below this line
+    - do not place any code below this line
+
+    -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
